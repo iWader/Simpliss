@@ -559,9 +559,10 @@ table.plain {
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 4rem 0 0 0;
-    padding: 4rem 0 0 0;
+    margin: 4rem 0 4rem 0;
+    padding: 4rem 0 4rem 0;
     border-top: #EBF2F6 1px solid;
+	border-bottom: #EBF2F6 1px solid;
 }
 
 .post-footer h4 {
@@ -578,6 +579,15 @@ table.plain {
 /* Create some space to the right for the share links */
 .post-footer .author {
     margin-right: 180px;
+}
+
+.post-footer .author .author-pic {
+	background-size: cover;
+	border-radius: 100%;
+	margin: 0 10px 5px 0;
+	float: left;
+	width: 100px;
+	height: 100px;
 }
 
 /* Drop the share links in the space to the right.
@@ -617,6 +627,27 @@ table.plain {
 .gist .line-number {
     min-width: 25px;
     font-size: 1.1rem;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
 }
 
 
