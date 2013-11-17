@@ -685,18 +685,18 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     line-height: 1.7em;
-    color: #BBC7CC;
+    color: #FFFFFF;
     text-align: center;
     background: #222222;
 }
 
 .site-footer a {
-    color: #BBC7CC;
+    color: #A6ABAE;
     text-decoration: underline;
 }
 
 .site-footer a:hover {
-    color: #50585D;
+    color: #EDEEEF;
 }
 
 .poweredby .icon-ghost {
