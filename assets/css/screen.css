@@ -151,7 +151,7 @@ a {
 
 a:hover {
     color: #77a6ee;
-	transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
 }
 
 h1 a, h2 a, h3 a,
@@ -378,6 +378,19 @@ table.plain {
     width: auto;
     margin: 0 auto;
     line-height: 0;
+    -webkit-transition: all 0.5s ease-in;
+       -moz-transition: all 0.5s ease-in; 
+        -ms-transition: all 0.5s ease-in; 
+         -o-transition: all 0.5s ease-in; 
+            transition: all 0.5s ease-in;
+}
+
+#blog-logo img:hover {
+    -webkit-transform: rotate(360deg); 
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg); 
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
 
 #back {
@@ -437,7 +450,7 @@ table.plain {
 }
 
 .post-header {
-	text-align: center;
+    text-align: center;
 }
 
 .post-title {
@@ -446,7 +459,7 @@ table.plain {
 
 .post-title a {
     text-decoration: none;
-	font-weight: 700;
+    font-weight: 700;
 }
 
 .post-excerpt p {
@@ -663,7 +676,7 @@ table.plain {
    ========================================================================== */
    
 footer {
-	margin: 8rem 0 0 0;
+    margin: 8rem 0 0 0;
 }
 
 .site-footer {
@@ -773,24 +786,24 @@ footer {
 }
 
 .social-footer {
-	background-color: #444444;
-	text-align: center;
-	padding: 2rem 0;
+    background-color: #444444;
+    text-align: center;
+    padding: 2rem 0;
 }
 
 .social-footer .social-icon {
-	text-decoration: none;
-	margin-right: 10px;
-	display: inline-block;
-	color: #222222;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+    color: #222222;
 }
 
 .social-footer .social-icon:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 .social-footer .social-icon:hover {
-	color: #77a6ee;
+    color: #77a6ee;
 }
 
 
