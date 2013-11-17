@@ -15,6 +15,7 @@
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
 
     {{! Ghost outputs important style and meta data with this tag }}
@@ -25,12 +26,31 @@
     {{! Everything else gets inserted here }}
     {{{body}}}
 
-    <footer class="site-footer">
-        <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
-        <div class="inner">
-             <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</section>
-             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
-        </div>
+    <footer>
+		{{! Feel free to change up the social links as you wish! - All available icons can be found here http://fontawesome.io/icons/ }}
+		<section class="social-footer">
+			<div class="inner">
+				<a href="https://bitbucket.org/iWader" class="social-icon">
+					<i class="fa fa-bitbucket fa-3x"></i>
+				</a>
+				
+				<a href="https://github.com/iWader" class="social-icon">
+					<i class="fa fa-github fa-3x"></i>
+				</a>
+				
+				<a href="https://twitter.com/iWader" class="social-icon">
+					<i class="fa fa-twitter fa-3x"></i>
+				</a>
+			</div>
+		</section>
+		
+		<section class="site-footer">
+			<a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
+			<div class="inner">
+				 <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</section>
+				 <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+			</div>
+		</section>
     </footer>
 
     {{! Ghost outputs important scripts and data with this tag }}

@@ -619,12 +619,12 @@ table.plain {
     margin: 4rem auto;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
-    color: #D0D6DA;
+    color: #A6ABAE;
     text-align: center;
 }
 
 .pagination a {
-    color: #D0D6DA;
+    color: #A6ABAE;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -654,19 +654,21 @@ table.plain {
 
 .older-posts:hover,
 .newer-posts:hover {
-    border-color: #D0D6DA;
+    border-color: #A6ABAE;
 }
 
 
 /* ==========================================================================
    8. Footer - The bottom of every page
    ========================================================================== */
+   
+footer {
+	margin: 8rem 0 0 0;
+}
 
 .site-footer {
     position: relative;
-    margin: 8rem 0 0 0;
     padding: 4rem 0;
-    border-top: #EBF2F6 1px solid;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     line-height: 1.7em;
@@ -768,6 +770,27 @@ table.plain {
 .subscribe:hover .tooltip {
     opacity: 1;
     top: -33px;
+}
+
+.social-footer {
+	background-color: #444444;
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.social-footer .social-icon {
+	text-decoration: none;
+	margin-right: 10px;
+	display: inline-block;
+	color: #222222;
+}
+
+.social-footer .social-icon:last-child {
+	margin-right: 0;
+}
+
+.social-footer .social-icon:hover {
+	color: #77a6ee;
 }
 
 
