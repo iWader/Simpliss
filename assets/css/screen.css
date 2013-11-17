@@ -23,6 +23,7 @@
    ========================================================================== */
 
 @import url(normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
 
 
 /* ==========================================================================
@@ -87,7 +88,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2.0rem;
     line-height: 1.6em;
     color: #3A4145;
@@ -110,7 +111,7 @@ h4, h5, h6 {
     text-rendering: optimizeLegibility;
     line-height: 1;
     margin-top: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -149,7 +150,8 @@ a {
 }
 
 a:hover {
-    color: #57A3E8;
+    color: #77a6ee;
+	transition: all 0.7s ease-out;
 }
 
 h1 a, h2 a, h3 a,
@@ -398,8 +400,8 @@ table.plain {
     margin: 0;
     font-size: 1.8rem;
     line-height: 1.5em;
-    font-weight: 300;
-    font-family: 'Droid Serif', serif;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 0;
 }
 
@@ -410,7 +412,7 @@ table.plain {
     max-width: 700px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: #D0D6DA 1px solid;
     word-break: break-word;
     hyphens: auto;
 }
@@ -422,7 +424,7 @@ table.plain {
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: #D0D6DA 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -434,12 +436,17 @@ table.plain {
     box-shadow: #fff 0 0 0 5px;
 }
 
+.post-header {
+	text-align: center;
+}
+
 .post-title {
     margin:0;
 }
 
 .post-title a {
     text-decoration: none;
+	font-weight: 700;
 }
 
 .post-excerpt p {
@@ -451,13 +458,13 @@ table.plain {
 .post-meta {
     display: inline-block;
     margin: 0 0 5px 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    color: #9EABB3;
+    color: #999999;
 }
 
 .post-meta a {
-    color: #9EABB3;
+    color: #999999;
     text-decoration: none;
 }
 
@@ -610,14 +617,14 @@ table.plain {
     width: 80%;
     max-width: 700px;
     margin: 4rem auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: #D0D6DA;
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+    color: #D0D6DA;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -629,7 +636,7 @@ table.plain {
     border: #EBF2F6 2px solid;
     text-decoration: none;
     border-radius: 30px;
-    transition: border ease 0.3s;
+    transition: border 0.7s ease-in;
 }
 
 .older-posts {
@@ -647,7 +654,7 @@ table.plain {
 
 .older-posts:hover,
 .newer-posts:hover {
-    border-color: #9EABB3;
+    border-color: #D0D6DA;
 }
 
 
@@ -660,12 +667,12 @@ table.plain {
     margin: 8rem 0 0 0;
     padding: 4rem 0;
     border-top: #EBF2F6 1px solid;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     line-height: 1.7em;
     color: #BBC7CC;
     text-align: center;
-    background: #F7FAFB;
+    background: #222222;
 }
 
 .site-footer a {
@@ -699,17 +706,16 @@ table.plain {
     top: -14px;
     left: 50%;
     margin-left: -15px;
-    border: #EBF2F6 1px solid;
     text-align: center;
     line-height: 2.4rem;
     border-radius: 50px;
-    background: #fff;
+    background: #222222;
     transition: box-shadow 0.5s;
 }
 
 /* The RSS icon, inserted via icon font */
 .subscribe:before {
-    color: #D2DEE3;
+    color: #FF9933;
     font-size: 10px;
     position: absolute;
     top: 2px;
@@ -722,10 +728,6 @@ table.plain {
 .subscribe:hover {
     box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;
     transition: box-shadow 0.25s;
-}
-
-.subscribe:hover:before {
-    color: #50585D;
 }
 
 /* CSS tooltip saying "Subscribe!" - initially hidden */
@@ -741,7 +743,7 @@ table.plain {
     font-weight: bold;
     line-height: 1em;
     text-align: center;
-    background: #50585D;
+    background: #222222;
     border-radius:20px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     transition: opacity 0.3s ease, top 0.3s ease;
@@ -752,7 +754,7 @@ table.plain {
     content:"";
     border-width:5px 5px 0 5px;
     border-style:solid;
-    border-color: #50585D transparent;
+    border-color: #222222 transparent;
     display:block;
     position:absolute;
     bottom:-4px;
